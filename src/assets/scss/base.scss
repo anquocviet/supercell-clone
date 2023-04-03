@@ -1,0 +1,36 @@
+@font-face {
+   font-family: SupercellHeadline-Heavy;
+   src: url('/src/assets/fonts/sc_headline-heavy.woff2');
+}
+@font-face {
+   font-family: SupercellText-Regular;
+   src: url('/src/assets/fonts/sc_text_w_rg.woff2');
+}
+@font-face {
+   font-family: SupercellText-Bold;
+   src: url('/src/assets/fonts/sc_text_w_bd.woff2');
+}
+@font-face {
+   font-family: SupercellText-Medium;
+   src: url('/assets/fonts/sc_text_w_md.woff2');
+}
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+   --primary-color: #4685f2;
+   --black: #000;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+   line-height: 1.65;
+   font-family: SupercellText-Regular, Arial, Helvetica, sans-serif;
+}
