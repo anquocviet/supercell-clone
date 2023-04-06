@@ -6,6 +6,7 @@
    height: $header-height;
    width: 1200px;
    background-color: $black;
+   z-index: 1;
    &__logo {
       width: 54px;
       margin-left: 14px;
@@ -95,7 +96,6 @@
    display: flex;
    transform-origin: top;
    animation: fadeOut ease 0.6s;
-   transition: all ease 0.6s;
 }
 
 // News
@@ -142,4 +142,102 @@
       font-size: 1.3rem;
       padding: 11px 26px;
    }
+}
+
+.slider {
+   padding: 112px 0 48px;
+   background-color: #f2f2f2;
+   position: relative;
+
+   &-inner {
+      display: none;
+   }
+
+   &-inner--active {
+      display: block;
+   }
+
+   &__action {
+      width: 66px;
+      height: 74px;
+      background-color: $black;
+      color: $white;
+      font-size: 2.4rem;
+      outline: none;
+      border: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   &__action:first-of-type {
+      left: 0;
+      border-radius: 0 99px 99px 0;
+   }
+
+   &__action:last-of-type {
+      right: 0;
+      border-radius: 99px 0 0 99px;
+   }
+}
+
+.slide__card {
+   .card-item {
+      box-shadow: 0 2px 16px 4px #ddd;
+      height: 705px;
+      background-color: $white;
+   }
+
+   .card__img {
+      width: 100%;
+   }
+}
+
+.card-text {
+   background-color: $white;
+   padding: 37.5px 60px;
+   overflow: hidden;
+
+   .card__title {
+      font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+   }
+
+   .card__desc {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      line-height: 1.5;
+   }
+
+   .card__link {
+      text-decoration: none;
+      font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: $primary-color;
+   }
+}
+
+.dot-group {
+   margin-top: 58px;
+
+   .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 99px;
+      background-color: #ccc;
+      margin: 8px;
+      outline: none;
+      border: none;
+      &--active {
+         background-color: $primary-color;
+      }
+   }
+}
+
+.footer {
+   height: 450px;
+   background-color: $black;
 }
