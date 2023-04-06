@@ -1,3 +1,4 @@
+@import './variables';
 @font-face {
    font-family: SupercellHeadline-Heavy;
    src: url('/src/assets/fonts/sc_headline-heavy.woff2');
@@ -12,13 +13,10 @@
 }
 @font-face {
    font-family: SupercellText-Medium;
-   src: url('/assets/fonts/sc_text_w_md.woff2');
+   src: url('/src/assets/fonts/sc_text_w_md.woff2');
 }
 @import 'bootstrap/scss/bootstrap';
 @import '@fortawesome/fontawesome-free/css/all.css';
-
-$primary-color: #4685f2;
-$header-height: 78px;
 
 * {
    box-sizing: border-box;
