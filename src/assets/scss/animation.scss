@@ -1,0 +1,10 @@
+@keyframes fadeOut {
+   from {
+      transform: scaleY(0);
+      opacity: 0;
+   }
+   to {
+      transform: scaleY(100%);
+      opacity: 1;
+   }
+}

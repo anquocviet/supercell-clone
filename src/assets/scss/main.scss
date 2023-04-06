@@ -1,0 +1,101 @@
+$primary-color: #4685f2;
+$header-height: 78px;
+$white: #fff;
+$black: #000;
+@import './animation.scss';
+
+.header {
+   height: $header-height;
+   width: 1200px;
+   background-color: $black;
+   &__logo {
+      width: 54px;
+      margin-left: 14px;
+   }
+}
+
+.nav {
+   $nav-text-color: #808080;
+   color: $nav-text-color;
+   flex: 1;
+   &__menu {
+      gap: 40px;
+      margin: 0 0 0 40px;
+      font-size: 1.5rem;
+   }
+
+   .menu__item {
+      position: relative;
+   }
+
+   .menu__item a {
+      display: inline-block;
+      line-height: $header-height;
+   }
+
+   &__menu a {
+      color: $nav-text-color;
+      text-decoration: none;
+   }
+
+   &__menu a:hover {
+      color: $white;
+   }
+
+   &__icon-search {
+      margin-bottom: 0;
+   }
+
+   &__icon-list {
+      gap: 30px;
+      margin-right: 30px;
+   }
+
+   &__icon-item img {
+      height: 26px;
+   }
+
+   &__icon-item:nth-child(2) img {
+      height: 33px;
+   }
+
+   &__icon-item:last-child img {
+      height: 28px;
+   }
+
+   &__icon-item img:hover {
+      filter: brightness(2);
+      transition: filter ease-in-out 0.2s;
+   }
+
+   &__search {
+      width: 74px;
+      border-left: 1px solid #444;
+      height: $header-height;
+      cursor: pointer;
+   }
+
+   &__search:hover i {
+      transition: color ease 0.35s;
+      color: $white;
+   }
+}
+
+.sub-menu {
+   position: fixed;
+   top: $header-height;
+   left: 0;
+   gap: 15px;
+   width: 1200px;
+   height: $header-height;
+   padding-left: 40px;
+   background-color: rgba($color: $black, $alpha: 0.8);
+   display: none;
+}
+
+.menu__item:hover .sub-menu {
+   display: flex;
+   transform-origin: top;
+   animation: fadeOut ease 0.6s;
+   transition: all ease 0.6s;
+}
