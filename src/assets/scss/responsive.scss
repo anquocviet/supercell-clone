@@ -1,0 +1,92 @@
+// @import './variables';
+
+// Apply for screen <= 1080px
+@media screen and (max-width: 80em) {
+   $max-width: 1024px;
+   $header-height: 68px;
+
+   .row {
+      --bs-gutter-x: 2rem;
+   }
+
+   .header {
+      width: $max-width;
+      height: $header-height;
+      &__logo {
+         width: 46px;
+      }
+   }
+
+   .nav {
+      &__menu {
+         gap: 35px;
+         margin-left: 35px;
+         font-size: 1.4rem;
+      }
+
+      .menu__item a {
+         line-height: $header-height;
+      }
+
+      &__search {
+         height: $header-height;
+      }
+   }
+
+   .sub-menu {
+      height: $header-height;
+      top: $header-height;
+      width: $max-width;
+   }
+
+   .news {
+      width: $max-width;
+   }
+
+   .article {
+      margin-bottom: 48px;
+
+      &__desc {
+         font-size: 1.2rem;
+      }
+
+      &__title {
+         font-size: 1.6rem;
+      }
+   }
+
+   .more-news {
+      .btn-more-news {
+         padding: 10px 21px;
+      }
+   }
+
+   .slider {
+      padding: 48px 0 58px;
+   }
+
+   .slider-inner {
+      width: $max-width;
+   }
+
+   .slide__card {
+      .card-item {
+         height: 634px;
+      }
+   }
+
+   .card-text {
+      .card__title {
+         font-size: 1.4rem;
+         margin-bottom: 14px;
+      }
+
+      .card__desc {
+         font-size: 1.2rem;
+      }
+   }
+
+   .dot-group {
+      margin-top: 50px;
+   }
+}
