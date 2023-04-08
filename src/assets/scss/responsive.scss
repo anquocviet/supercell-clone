@@ -24,13 +24,13 @@
          font-size: 1.4rem;
       }
 
-      .menu__item a {
-         line-height: $header-height;
-      }
-
       &__search {
          height: $header-height;
       }
+   }
+
+   .menu__item a {
+      line-height: $header-height;
    }
 
    .sub-menu {
@@ -54,10 +54,8 @@
       }
    }
 
-   .more-news {
-      .btn-more-news {
-         padding: 10px 21px;
-      }
+   .btn-more-news {
+      padding: 10px 21px;
    }
 
    .slider {
@@ -68,21 +66,17 @@
       width: $max-width;
    }
 
-   .slide__card {
-      .card-item {
-         height: 634px;
-      }
+   .card-item {
+      height: 634px;
    }
 
-   .card-text {
-      .card__title {
-         font-size: 1.4rem;
-         margin-bottom: 14px;
-      }
+   .card__title {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+   }
 
-      .card__desc {
-         font-size: 1.2rem;
-      }
+   .card__desc {
+      font-size: 1.2rem;
    }
 
    .dot-group {
@@ -119,14 +113,6 @@
          text-align: left;
       }
 
-      .menu__item {
-         width: 100%;
-      }
-
-      .menu__item a {
-         line-height: 47px;
-      }
-
       &__icon-search {
          padding-left: 32px;
          margin-bottom: 32px;
@@ -135,6 +121,14 @@
       &__search {
          display: none;
       }
+   }
+
+   .menu__item {
+      width: 100%;
+   }
+
+   .menu__item a {
+      line-height: 47px;
    }
 
    .sub-menu {
@@ -155,7 +149,7 @@
    }
 
    .menu__item:hover .sub-menu {
-      // display: none;
+      display: none;
    }
 
    .news {
@@ -169,10 +163,37 @@
    .slider-inner {
       width: $max-width;
    }
+
+   .card-item {
+      height: 555px;
+   }
+
+   .card-text {
+      padding: 30px 24px;
+   }
 }
 
 // Apply for screen <= 790px
 @media screen and (max-width: 49.375em) {
+   .menu__item i {
+      display: block;
+   }
+
+   .news {
+      width: 100%;
+   }
+
+   .btn-more-menu {
+      padding: 12px 32px;
+   }
+
+   .slider__action {
+      display: none !important;
+   }
+}
+
+// Apply for screen <= 47.9375 (bootstrap)
+@media screen and (max-width: 47.9375em) {
    .container {
       max-width: 90%;
    }
@@ -182,18 +203,18 @@
       max-width: 100%;
    }
 
-   .news {
-      width: 100%;
+   .card-item {
+      height: auto;
+      padding-bottom: 12px;
    }
 
-   .more-news {
-      .btn-more-menu {
-         padding: 12px 32px;
-      }
+   .card__title {
+      font-size: 1.2em;
+      text-align: center;
    }
 
-   .slider__action {
-      display: none !important;
+   .card__desc {
+      font-size: 1.6rem;
    }
 
    .slide__card:last-child {

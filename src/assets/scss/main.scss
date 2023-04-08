@@ -13,6 +13,7 @@
    }
 }
 
+// Navigation in header
 .nav {
    color: $nav-text-color;
    display: flex;
@@ -22,38 +23,6 @@
       gap: 40px;
       margin: 0 0 0 45px;
       font-size: 1.5rem;
-   }
-
-   .menu__item {
-      position: relative;
-   }
-
-   .menu__item a {
-      display: inline-block;
-      line-height: $header-height;
-      width: 100%;
-   }
-
-   .menu__item i {
-      // display: none;
-      font-size: 1rem;
-      margin-left: 4px;
-   }
-
-   .menu__item a:hover {
-      color: $white;
-   }
-
-   .search--mobile {
-      display: none;
-      margin-top: 4px;
-      font-size: 1.8rem;
-      cursor: pointer;
-   }
-
-   .search--mobile i {
-      font-size: 1.8rem;
-      margin-right: 8px;
    }
 
    &__menu a {
@@ -101,6 +70,41 @@
    }
 }
 
+// Menu item in navigation
+.menu__item {
+   position: relative;
+}
+
+.menu__item a {
+   display: inline-block;
+   line-height: $header-height;
+   width: 100%;
+}
+
+.menu__item i {
+   display: none;
+   font-size: 1rem;
+   margin-left: 4px;
+}
+
+.menu__item a:hover {
+   color: $white;
+}
+
+// Search in mobile screen
+.search--mobile {
+   display: none;
+   margin-top: 4px;
+   font-size: 1.8rem;
+   cursor: pointer;
+}
+
+.search--mobile i {
+   font-size: 1.8rem;
+   margin-right: 8px;
+}
+
+// Sub menu is menu level 2
 .sub-menu {
    position: fixed;
    top: $header-height;
@@ -119,6 +123,7 @@
    animation: fadeOut ease 0.6s;
 }
 
+// Btn more in mobile screen
 .btn-more-menu {
    background-color: transparent;
    border: none;
@@ -171,13 +176,14 @@
 .more-news {
    width: 100%;
    text-align: center;
-   .btn-more-news {
-      color: $white;
-      text-transform: uppercase;
-      font-family: SupercellText-Medium;
-      font-size: 1.3rem;
-      padding: 11px 26px;
-   }
+}
+
+.btn-more-news {
+   color: $white;
+   text-transform: uppercase;
+   font-family: SupercellText-Medium;
+   font-size: 1.3rem;
+   padding: 11px 26px;
 }
 
 .slider {
@@ -218,59 +224,60 @@
    }
 }
 
-.slide__card {
-   .card-item {
-      box-shadow: 0 2px 16px 4px #ddd;
-      height: 705px;
-      background-color: $white;
-   }
+// Card item in slider
+.card-item {
+   box-shadow: 0 2px 16px 4px #ddd;
+   height: 705px;
+   background-color: $white;
+   overflow: hidden;
+}
 
-   .card__img {
-      width: 100%;
-   }
+.card__img {
+   width: 100%;
 }
 
 .card-text {
    background-color: $white;
    padding: 37.5px 60px;
    overflow: hidden;
-
-   .card__title {
-      font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
-      font-size: 1.8rem;
-      line-height: 1.8;
-      margin-bottom: 18px;
-   }
-
-   .card__desc {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-   }
-
-   .card__link {
-      text-decoration: none;
-      font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      font-size: 1.3rem;
-      color: $primary-color;
-   }
 }
 
+.card__title {
+   font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+   font-size: 1.8rem;
+   line-height: 1.8;
+   margin-bottom: 18px;
+}
+
+.card__desc {
+   font-size: 1.5rem;
+   margin-bottom: 15px;
+   line-height: 1.5;
+}
+
+.card__link {
+   text-decoration: none;
+   font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   font-size: 1.3rem;
+   color: $primary-color;
+}
+
+// Dot in bottom slider
 .dot-group {
    margin-top: 58px;
+}
 
-   .dot {
-      width: 14px;
-      height: 14px;
-      border-radius: 99px;
-      background-color: #ccc;
-      margin: 8px;
-      outline: none;
-      border: none;
-      &--active {
-         background-color: $primary-color;
-      }
+.dot {
+   width: 14px;
+   height: 14px;
+   border-radius: 99px;
+   background-color: #ccc;
+   margin: 8px;
+   outline: none;
+   border: none;
+   &--active {
+      background-color: $primary-color;
    }
 }
 
