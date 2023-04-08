@@ -150,6 +150,10 @@
       }
    }
 
+   .search--mobile {
+      display: block;
+   }
+
    .menu__item:hover .sub-menu {
       // display: none;
    }
@@ -164,5 +168,35 @@
 
    .slider-inner {
       width: $max-width;
+   }
+}
+
+// Apply for screen <= 790px
+@media screen and (max-width: 49.375em) {
+   .container {
+      max-width: 90%;
+   }
+
+   .header {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .news {
+      width: 100%;
+   }
+
+   .more-news {
+      .btn-more-menu {
+         padding: 12px 32px;
+      }
+   }
+
+   .slider__action {
+      display: none !important;
+   }
+
+   .slide__card:last-child {
+      display: none;
    }
 }
