@@ -1,4 +1,4 @@
-// @import './variables';
+@import './variables';
 
 // Apply for screen <= 1280px
 @media screen and (max-width: 80em) {
@@ -36,7 +36,6 @@
    .sub-menu {
       height: $header-height;
       top: $header-height;
-      width: $max-width;
    }
 
    .news {
@@ -88,5 +87,82 @@
 
    .dot-group {
       margin-top: 50px;
+   }
+}
+
+// Apply for screen <= 1050px
+@media screen and (max-width: 65.625em) {
+   $header-height: 66px;
+   $max-width: 768px;
+
+   .header {
+      height: $header-height;
+      width: $max-width;
+   }
+
+   .nav {
+      display: none;
+      position: absolute;
+      top: $header-height;
+      height: calc(100vh - $header-height);
+      background-color: $black;
+      width: $max-width;
+      flex-direction: column;
+      align-items: flex-start;
+      &__menu {
+         font-size: 2.5rem;
+         flex-direction: column;
+         gap: 0;
+         width: 100%;
+         margin-left: 0;
+         padding-left: 32px;
+         text-align: left;
+      }
+
+      .menu__item {
+         width: 100%;
+      }
+
+      .menu__item a {
+         line-height: 47px;
+      }
+
+      &__icon-search {
+         padding-left: 32px;
+         margin-bottom: 32px;
+      }
+
+      &__search {
+         display: none;
+      }
+   }
+
+   .sub-menu {
+      position: static;
+      font-size: 1.8rem;
+      height: 100%;
+      padding-left: 0;
+      flex-direction: column;
+      gap: 0;
+
+      a {
+         width: 100%;
+      }
+   }
+
+   .menu__item:hover .sub-menu {
+      // display: none;
+   }
+
+   .news {
+      width: $max-width;
+   }
+
+   .btn-more-menu {
+      display: block;
+   }
+
+   .slider-inner {
+      width: $max-width;
    }
 }

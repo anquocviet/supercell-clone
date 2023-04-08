@@ -14,8 +14,9 @@
 }
 
 .nav {
-   $nav-text-color: #808080;
    color: $nav-text-color;
+   display: flex;
+   align-items: center;
    flex: 1;
    &__menu {
       gap: 40px;
@@ -30,15 +31,33 @@
    .menu__item a {
       display: inline-block;
       line-height: $header-height;
+      width: 100%;
+   }
+
+   .menu__item i {
+      // display: none;
+      font-size: 1rem;
+      margin-left: 4px;
+   }
+
+   .menu__item a:hover {
+      color: $white;
+   }
+
+   .search--mobile {
+      margin-top: 4px;
+      font-size: 1.8rem;
+      cursor: pointer;
+   }
+
+   .search--mobile i {
+      font-size: 1.8rem;
+      margin-right: 8px;
    }
 
    &__menu a {
       color: $nav-text-color;
       text-decoration: none;
-   }
-
-   &__menu a:hover {
-      color: $white;
    }
 
    &__icon-search {
@@ -68,6 +87,7 @@
    }
 
    &__search {
+      display: flex;
       width: 74px;
       border-left: 1px solid #444;
       height: $header-height;
@@ -85,7 +105,7 @@
    top: $header-height;
    left: 0;
    gap: 15px;
-   width: 1200px;
+   width: -webkit-fill-available;
    height: $header-height;
    padding-left: 40px;
    background-color: rgba($color: $black, $alpha: 0.8);
@@ -96,6 +116,19 @@
    display: flex;
    transform-origin: top;
    animation: fadeOut ease 0.6s;
+}
+
+.btn-more-menu {
+   background-color: transparent;
+   border: none;
+   display: none;
+   position: absolute;
+   top: calc($header-height / -2 - 3px);
+   right: 0;
+
+   img {
+      width: 50px;
+   }
 }
 
 // News

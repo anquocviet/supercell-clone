@@ -13,16 +13,19 @@
 
 <body>
    <div id="app">
-      <header class="header container gx-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-center">
+      <header class="header container gx-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-center ">
          <div class="logo">
             <a href="/">
                <img src="./src/assets/images/supercell_logo.png" alt="Logo" class="header__logo"></a>
          </div>
-         <nav class="nav d-flex justify-content-between align-items-center">
+         <nav class="nav justify-content-between">
             <ul class="nav__menu list-unstyled d-flex align-items-center">
                <li class="menu__item">
-                  <a href="#">Games</a>
-                  <ul class="sub-menu list-unstyled align-items-center">
+                  <a href="#">
+                     Games
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
                      <li class="sub-menu__item"><a href="">Hay Day</a></li>
                      <li class="sub-menu__item"><a href="">Clash of Clans</a></li>
                      <li class="sub-menu__item"><a href="">Boom Beach</a></li>
@@ -31,8 +34,11 @@
                   </ul>
                </li>
                <li class="menu__item">
-                  <a href="#">Careers</a>
-                  <ul class="sub-menu list-unstyled align-items-center">
+                  <a href="#">
+                     Careers
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
                      <li class="sub-menu__item"><a href="">Why You Might Love It Here</a></li>
                      <li class="sub-menu__item"><a href="">Our Offices</a></li>
                      <li class="sub-menu__item"><a href="">Joining Supercell</a></li>
@@ -43,20 +49,30 @@
                   </ul>
                </li>
                <li class="menu__item">
-                  <a href="#">Support</a>
-                  <ul class="sub-menu list-unstyled align-items-center">
+                  <a href="#">
+                     Support
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
                      <li class="sub-menu__item"><a href="">Be Safe & Play Fair</a></li>
                   </ul>
                </li>
                <li class="menu__item">
-                  <a href="#">About Us</a>
-                  <ul class="sub-menu list-unstyled align-items-center">
+                  <a href="#">
+                     About Us
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
                      <li class="sub-menu__item"><a href="">News</a></li>
                      <li class="sub-menu__item"><a href="">Investments</a></li>
                      <li class="sub-menu__item"><a href="">Level Up</a></li>
                      <li class="sub-menu__item"><a href="">Ilkka's Long Texts</a></li>
                   </ul>
                </li>
+               <div class="menu__item search--mobile">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Search</span>
+               </div>
             </ul>
             <ul class="nav__icon-search list-unstyled d-flex align-items-center">
                <li class="nav__icon">
@@ -78,19 +94,25 @@
                      </li>
                   </ul>
                </li>
-               <li class="nav__search d-flex justify-content-center align-items-center">
+               <li class="nav__search justify-content-center align-items-center">
                   <i class="fa-solid fa-magnifying-glass"></i>
                </li>
             </ul>
          </nav>
+         <!-- For tablet and mobile -->
+         <button class="btn-more-menu p-0">
+            <img src="./src/assets/images/btn_mobile_menu.webp" alt="More">
+         </button>
       </header>
+
+      <!-- Content -->
       <div class="content">
          <div class="banner" style="background-color: #ccc; height: 580px;">
             <!-- Banner for Nguyen Kien Thuc -->
          </div>
          <div class="news">
             <div class="container px-0">
-               <div class="row gx-xxl-5">
+               <div class="row gx-xxl-5 gx-xl-5">
                   <article class="article col-6">
                      <a href=""><img src="./src/assets/images/article_thumb_brawlwc2022.webp"
                            alt="The Brawl Stars World Finals Are Over, and We Have a Winner!" class="article__img"></a>
