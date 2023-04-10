@@ -1,5 +1,4 @@
 @import './variables';
-@import './animation';
 
 // Header
 .header {
@@ -103,22 +102,42 @@
    margin-right: 8px;
 }
 
+.input__search--dk {
+   position: absolute;
+   right: 90px;
+   color: inherit;
+   background-color: $black;
+   border: none;
+   outline: none;
+   border-bottom: 1.5px solid #444;
+   font-size: 1.3rem;
+   width: 280px;
+   height: 40px;
+   transform: translateY(-150%);
+   transition: transform ease 0.3s;
+}
+
+.searching {
+   transform: translateY(0);
+}
+
+// Sub menu
 .sub-menu {
    position: fixed;
    top: $header-height;
    left: 0;
+   display: flex;
    gap: 15px;
    width: -webkit-fill-available;
-   height: $header-height;
+   height: 0;
    padding-left: 40px;
    background-color: rgba($color: $black, $alpha: 0.8);
-   display: none;
+   transition: height ease-in-out 0.35s;
+   overflow: hidden;
 }
 
-.menu__item:hover .sub-menu {
-   display: flex;
-   transform-origin: top;
-   animation: fadeOut ease 0.6s;
+.menu__item--active .sub-menu {
+   height: 100%;
 }
 
 .btn-more-menu {
@@ -126,12 +145,17 @@
    border: none;
    display: none;
    position: absolute;
-   top: calc($header-height / -2 - 3px);
+   transform: translateY(-25%);
    right: 0;
+   transition: transform ease 0.3s;
 
    img {
       width: 50px;
    }
+}
+
+.btn-menu--close {
+   transform: translateY(25%);
 }
 
 //banner

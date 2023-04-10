@@ -35,7 +35,6 @@
    }
 
    .sub-menu {
-      height: $header-height;
       top: $header-height;
    }
 
@@ -96,14 +95,22 @@
    }
 
    .nav {
-      display: none;
       position: absolute;
       top: $header-height;
       height: calc(100vh - $header-height);
       background-color: $black;
-      width: $max-width;
+      width: inherit;
+      max-width: inherit;
       flex-direction: column;
       align-items: flex-start;
+      transform-origin: top;
+      transform: scaleY(0);
+      z-index: 1;
+      transition: transform ease 0.3s;
+
+      &--opening {
+         transform: scaleY(100%);
+      }
 
       &__menu {
          font-size: 2.5rem;
@@ -143,7 +150,7 @@
    .sub-menu {
       position: static;
       font-size: 1.8rem;
-      height: 100%;
+      // height: auto;
       padding-left: 0;
       flex-direction: column;
       gap: 0;
@@ -155,10 +162,6 @@
 
    .search--mobile {
       display: block;
-   }
-
-   .menu__item:hover .sub-menu {
-      display: none;
    }
 
    .news {
