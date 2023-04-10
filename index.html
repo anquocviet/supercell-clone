@@ -1,427 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="./src/assets/images/supercell_logo_bg.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Supercell Clone</title>
-      <link rel="stylesheet" href="./src/assets/scss/base.scss" />
-      <link rel="stylesheet" href="./src/assets/scss/main.scss" />
-      <link rel="stylesheet" href="./src/assets/scss/responsive.scss" />
-   </head>
 
-   <body>
-      <div id="app">
-         <header
-            class="header container gx-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-center"
-         >
-            <div class="logo">
-               <a href="/"> <img src="./src/assets/images/supercell_logo.png" alt="Logo" class="header__logo" /></a>
-            </div>
-            <nav class="nav justify-content-between">
-               <ul class="nav__menu list-unstyled d-flex align-items-center">
-                  <li class="menu__item">
-                     <a href="#">
-                        Games
-                        <i class="fa-solid fa-angle-up"></i>
-                     </a>
-                     <ul class="sub-menu list-unstyled">
-                        <li class="sub-menu__item"><a href="">Hay Day</a></li>
-                        <li class="sub-menu__item"><a href="">Clash of Clans</a></li>
-                        <li class="sub-menu__item"><a href="">Boom Beach</a></li>
-                        <li class="sub-menu__item"><a href="">Clash Royale</a></li>
-                        <li class="sub-menu__item"><a href="">Brawl Starts</a></li>
-                     </ul>
-                  </li>
-                  <li class="menu__item">
-                     <a href="#">
-                        Careers
-                        <i class="fa-solid fa-angle-up"></i>
-                     </a>
-                     <ul class="sub-menu list-unstyled">
-                        <li class="sub-menu__item"><a href="">Why You Might Love It Here</a></li>
-                        <li class="sub-menu__item"><a href="">Our Offices</a></li>
-                        <li class="sub-menu__item"><a href="">Joining Supercell</a></li>
-                        <li class="sub-menu__item"><a href="">Living in Helsinki</a></li>
-                        <li class="sub-menu__item"><a href="">Living in Shanghai</a></li>
-                        <li class="sub-menu__item"><a href="">Open Positions</a></li>
-                        <li class="sub-menu__item"><a href="">Career Stories</a></li>
-                     </ul>
-                  </li>
-                  <li class="menu__item">
-                     <a href="#">
-                        Support
-                        <i class="fa-solid fa-angle-up"></i>
-                     </a>
-                     <ul class="sub-menu list-unstyled">
-                        <li class="sub-menu__item"><a href="">Be Safe & Play Fair</a></li>
-                     </ul>
-                  </li>
-                  <li class="menu__item">
-                     <a href="#">
-                        About Us
-                        <i class="fa-solid fa-angle-up"></i>
-                     </a>
-                     <ul class="sub-menu list-unstyled">
-                        <li class="sub-menu__item"><a href="">News</a></li>
-                        <li class="sub-menu__item"><a href="">Investments</a></li>
-                        <li class="sub-menu__item"><a href="">Level Up</a></li>
-                        <li class="sub-menu__item"><a href="">Ilkka's Long Texts</a></li>
-                     </ul>
-                  </li>
-                  <div class="menu__item search--mobile">
-                     <i class="fa-solid fa-magnifying-glass"></i>
-                     <span>Search</span>
-                  </div>
-               </ul>
-               <ul class="nav__icon-search list-unstyled d-flex align-items-center">
-                  <li class="nav__icon">
-                     <ul class="nav__icon-list list-unstyled d-flex">
-                        <li class="nav__icon-item">
-                           <a href="#">
-                              <img src="./src/assets/images/creators_grey.png" alt="Creators" />
-                           </a>
-                        </li>
-                        <li class="nav__icon-item">
-                           <a href="#">
-                              <img src="./src/assets/images/make_grey.png" alt="Make" />
-                           </a>
-                        </li>
-                        <li class="nav__icon-item">
-                           <a href="#">
-                              <img src="./src/assets/images/supercell_id_grey.png" alt="ID" />
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="nav__search justify-content-center align-items-center">
-                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </li>
-               </ul>
-            </nav>
-            <!-- For tablet and mobile -->
-            <button class="btn-more-menu p-0">
-               <img src="./src/assets/images/btn_mobile_menu.webp" alt="More" />
-            </button>
-         </header>
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="./src/assets/images/supercell_logo_bg.png" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Supercell Clone</title>
+   <link rel="stylesheet" href="./src/assets/scss/base.scss" />
+   <link rel="stylesheet" href="./src/assets/scss/main.scss" />
+   <link rel="stylesheet" href="./src/assets/scss/responsive.scss" />
+</head>
 
-         <!-- Content -->
-         <div class="content">
-            <div class="banner">
-               <!-- Banner for Nguyen Kien Thuc -->
-               <div class="banner_hero_img">
-                  <img src="./src/assets/images/frontpage_hero.png" alt="" height="590" />
-               </div>
-               <div class="banner_heroText">
-                  <h1 class="banner_heroText__title">Supercell</h1>
-                  <p class="banner_heroText__description">
-                     Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and Brawl Stars.
-                  </p>
-                  <div class="banner_button">
-                     <a href="">
-                        <div class="callToActionButton_callToActionButtonContainer">
-                           <span class="callToActionButton_arrowDown"></span>
-                           <span class="callToActionButton_text">See latest</span>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="news">
-               <div class="container px-0">
-                  <div class="row gx-xxl-5 gx-xl-5">
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_brawlwc2022.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_booksofclash.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_brawlwc2022.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_booksofclash.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_brawlwc2022.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                     <article class="article col-12 col-md-6">
-                        <a href=""
-                           ><img
-                              src="./src/assets/images/article_thumb_booksofclash.webp"
-                              alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
-                              class="article__img"
-                        /></a>
-                        <p class="article__desc">news</p>
-                        <a href="">
-                           <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
-                        </a>
-                     </article>
-                  </div>
-                  <div class="more-news">
-                     <a href="" class="btn-more-news btn btn-primary">News Archive</a>
-                  </div>
-               </div>
-            </div>
-            <div class="front-page">
-               <!-- Two front page for Nguyen Kien Thuc -->
-               <div class="front-page__character">
-                  <div class="banner_hero_img">
-                     <img src="./src/assets/images/bg_wmg_brawlstars.0fd2a716.webp" height="592px" alt="" />
-                  </div>
-                  <div class="front-page__cotrol">
-                     <div class="front-page_textContainer">
-                        <h3>Games</h3>
-                        <p>
-                           Our dream is to create games that as many people as possible play for years and that are
-                           remembered forever.
-                        </p>
-                        <div>
-                           <a href="#" class="front-page__linkButton">See games</a>
-                        </div>
-                     </div>
-                     <div class="front-page__heroimg">
-                        <img src="./src/assets/images/nita.76e85eac.webp" alt="" />
-                     </div>
-                  </div>
-               </div>
-               <div class="front-page__character" style="background-color: #1f7aeb; height: 592px">
-                  <div class="front-page__cotrol">
-                     <div class="front-page__heroimg">
-                        <img src="./src/assets/images/miniPekka.de55815b.webp" alt="" />
-                     </div>
-                     <div class="front-page_textContainer">
-                        <h3>Careers</h3>
-                        <p>Join us to create games that excite and help our players around the world make memories.</p>
-                        <div>
-                           <a href="#" class="front-page__linkButton">See Careers</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="slider">
-               <!-- Button Previous, show when has class 'd-flex', hide when has class 'd-none' -->
-               <button class="slider__action prev align-items-center justify-content-center d-none">
-                  <i class="fa-solid fa-angle-left"></i>
-               </button>
-               <!-- Slider Content -->
-
-               <div class="slider-inner px-0 container slider-inner--active">
-                  <div class="row gx-5">
-                     <div class="slide__card col-12 col-md-6">
-                        <div class="card-item">
-                           <img
-                              src="./src/assets/images/news_mobilegamer.webp"
-                              alt="Mobilegamer.biz"
-                              class="card__img"
-                           />
-                           <div class="card-text">
-                              <h3 class="card__title">
-                                 Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
-                                 anyway
-                              </h3>
-                              <p class="card__desc">
-                                 “We work with a company who did a whole bunch of training to increase awareness of
-                                 mental health and also reduce the stigma,” says Mansford. “If people aren’t talking
-                                 about it, then that’s a problem in itself.” Staff can ask to be trained like mental
-                                 health first aiders under a program called ‘Jedis of the mind’, and in Helsinki there’s
-                                 a psychologist on-site twice a week. There are a raft of other training and online
-                                 resources for staff who want to learn more in a less public way as well.
-                              </p>
-                              <a href="" class="card__link">READ ARTICLE »</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="slide__card col-12 col-md-6">
-                        <div class="card-item">
-                           <img
-                              src="./src/assets/images/news_mobilegamer.webp"
-                              alt="Mobilegamer.biz"
-                              class="card__img"
-                           />
-                           <div class="card-text">
-                              <h3 class="card__title">
-                                 Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
-                                 anyway
-                              </h3>
-                              <p class="card__desc">
-                                 "In my experience, whenever you change some design fundamentals, the whole game needs
-                                 to be built in a different way. I don’t think many players will notice these
-                                 differences, but they can have a big impact on how the game needs to be built.”
-                              </p>
-                              <a href="" class="card__link">READ ARTICLE »</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="slider-inner px-0 container">
-                  <div class="row gx-5">
-                     <div class="slide__card col-12 col-md-6">
-                        <div class="card-item">
-                           <img
-                              src="./src/assets/images/news_mobilegamer.webp"
-                              alt="Mobilegamer.biz"
-                              class="card__img"
-                           />
-                           <div class="card-text">
-                              <h3 class="card__title">
-                                 Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
-                                 anyway
-                              </h3>
-                              <p class="card__desc">
-                                 “We work with a company who did a whole bunch of training to increase awareness of
-                                 mental health and also reduce the stigma,” says Mansford. “If people aren’t talking
-                                 about it, then that’s a problem in itself.” Staff can ask to be trained like mental
-                                 health first aiders under a program called ‘Jedis of the mind’, and in Helsinki there’s
-                                 a psychologist on-site twice a week. There are a raft of other training and online
-                                 resources for staff who want to learn more in a less public way as well.
-                              </p>
-                              <a href="" class="card__link">READ ARTICLE »</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="slide__card col-12 col-md-6">
-                        <div class="card-item">
-                           <img
-                              src="./src/assets/images/news_mobilegamer.webp"
-                              alt="Mobilegamer.biz"
-                              class="card__img"
-                           />
-                           <div class="card-text">
-                              <h3 class="card__title">
-                                 Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
-                                 anyway
-                              </h3>
-                              <p class="card__desc">
-                                 "In my experience, whenever you change some design fundamentals, the whole game needs
-                                 to be built in a different way. I don’t think many players will notice these
-                                 differences, but they can have a big impact on how the game needs to be built.”
-                              </p>
-                              <a href="" class="card__link">READ ARTICLE »</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Button Next, show when has class 'd-flex', hide when has class 'd-none' -->
-               <button class="slider__action next align-items-center justify-content-center d-flex">
-                  <i class="fa-solid fa-angle-right"></i>
-               </button>
-               <!-- Slider Dots -->
-               <div class="dot-group d-flex align-items-center justify-content-center">
-                  <button class="dot dot--active"></button>
-                  <button class="dot"></button>
-                  <button class="dot"></button>
-                  <button class="dot"></button>
-               </div>
-            </div>
-            <footer class="footer">
-               <!-- Footer for Nguyen Kien Thuc -->
-               <div class="Footer_footerContent">
-                  <div class="Footer_socialMediaMenu">
-                     <div class="Footer_socialMediaLinks">
-                        <h5>Follow us on</h5>
-                        <div class="Footer_socialMediaList">
-                           <a href="#"><img src="./src/assets/images/some_youtube.6b5d0c55.webp" alt="" /></a>
-                           <a href="#"><img src="./src/assets/images/some_facebook.49531fac.webp" alt="" /></a>
-                           <a href="#"><img src="./src/assets/images/some_instagram.2eaa320b.webp" alt="" /></a>
-                           <a href="#"><img src="./src/assets/images/some_twitter.c380be0d.webp" alt="" /></a>
-                           <a href="#"><img src="./src/assets/images/some_linkedin.974ae044.webp" alt="" /></a>
-                           <a href="#"><img src="./src/assets/images/some_glassdoor.73a81f1e.webp" alt="" /></a>
-                        </div>
-                     </div>
-                     <div class="Footer_storeMenu">
-                        <a href="#"><img src="./src/assets/images/appstore.c44572b2.webp" alt="" /></a>
-                        <a href="#"><img src="./src/assets/images/googleplay.4ced544f.webp" alt="" /></a>
-                     </div>
-                  </div>
-                  <nav class="Footer_userMenu">
-                     <ul class="Footer_userMenuList">
-                        <li>
-                           <a href="#">Terms of Service</a>
-                        </li>
-                        <li>
-                           <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                           <a href="#">Parent's Guide</a>
-                        </li>
-                        <li>
-                           <a href="#">Safe and Fair Play Policy</a>
-                        </li>
-                        <li>
-                           <a href="#">Other Legal Docs</a>
-                        </li>
-                        <li>
-                           <a href="#">For Media</a>
-                        </li>
-                        <li>
-                           <a href="#">Manage Cookies</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <div class="Footer_end">
-                     <address class="Footer_address">
-                        <span>Supercell Oy</span>
-                        <span>Jätkäsaarenlaituri 1</span>
-                        <span>00180 Helsinki</span>
-                        <span>Finland</span>
-                     </address>
-                     <a href="#" class="Footer_logo">
-                        <img src="./src/assets/images/supercell_logo.png" alt="" />
-                     </a>
-                  </div>
-               </div>
-            </footer>
+<body>
+   <div id="app">
+      <header class="header container gx-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-center">
+         <div class="logo">
+            <a href="/"> <img src="./src/assets/images/supercell_logo.png" alt="Logo" class="header__logo" /></a>
          </div>
+         <nav class="nav justify-content-between">
+            <ul class="nav__menu list-unstyled d-flex align-items-center">
+               <li class="menu__item">
+                  <a href="#">
+                     Games
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
+                     <li class="sub-menu__item"><a href="">Hay Day</a></li>
+                     <li class="sub-menu__item"><a href="">Clash of Clans</a></li>
+                     <li class="sub-menu__item"><a href="">Boom Beach</a></li>
+                     <li class="sub-menu__item"><a href="">Clash Royale</a></li>
+                     <li class="sub-menu__item"><a href="">Brawl Starts</a></li>
+                  </ul>
+               </li>
+               <li class="menu__item">
+                  <a href="#">
+                     Careers
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
+                     <li class="sub-menu__item"><a href="">Why You Might Love It Here</a></li>
+                     <li class="sub-menu__item"><a href="">Our Offices</a></li>
+                     <li class="sub-menu__item"><a href="">Joining Supercell</a></li>
+                     <li class="sub-menu__item"><a href="">Living in Helsinki</a></li>
+                     <li class="sub-menu__item"><a href="">Living in Shanghai</a></li>
+                     <li class="sub-menu__item"><a href="">Open Positions</a></li>
+                     <li class="sub-menu__item"><a href="">Career Stories</a></li>
+                  </ul>
+               </li>
+               <li class="menu__item">
+                  <a href="#">
+                     Support
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
+                     <li class="sub-menu__item"><a href="">Be Safe & Play Fair</a></li>
+                  </ul>
+               </li>
+               <li class="menu__item">
+                  <a href="#">
+                     About Us
+                     <i class="fa-solid fa-angle-up"></i>
+                  </a>
+                  <ul class="sub-menu list-unstyled">
+                     <li class="sub-menu__item"><a href="">News</a></li>
+                     <li class="sub-menu__item"><a href="">Investments</a></li>
+                     <li class="sub-menu__item"><a href="">Level Up</a></li>
+                     <li class="sub-menu__item"><a href="">Ilkka's Long Texts</a></li>
+                  </ul>
+               </li>
+               <div class="menu__item search--mobile">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Search</span>
+               </div>
+            </ul>
+            <ul class="nav__icon-search list-unstyled d-flex align-items-center">
+               <li class="nav__icon">
+                  <ul class="nav__icon-list list-unstyled d-flex">
+                     <li class="nav__icon-item">
+                        <a href="#">
+                           <img src="./src/assets/images/creators_grey.png" alt="Creators" />
+                        </a>
+                     </li>
+                     <li class="nav__icon-item">
+                        <a href="#">
+                           <img src="./src/assets/images/make_grey.png" alt="Make" />
+                        </a>
+                     </li>
+                     <li class="nav__icon-item">
+                        <a href="#">
+                           <img src="./src/assets/images/supercell_id_grey.png" alt="ID" />
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="nav__search justify-content-center align-items-center">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </li>
+            </ul>
+         </nav>
+         <!-- For tablet and mobile -->
+         <button class="btn-more-menu p-0">
+            <img src="./src/assets/images/btn_mobile_menu.webp" alt="More" />
+         </button>
+      </header>
+
+      <!-- Content -->
+      <div class="content">
+         <div class="banner">
+            <!-- Banner for Nguyen Kien Thuc -->
+            <div class="banner_hero_img">
+               <img src="./src/assets/images/frontpage_hero.png" alt="" height="590" />
+            </div>
+            <div class="banner_heroText">
+               <h1 class="banner_heroText__title">Supercell</h1>
+               <p class="banner_heroText__description">
+                  Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and Brawl Stars.
+               </p>
+               <div class="banner_button">
+                  <a href="">
+                     <div class="callToActionButton_callToActionButtonContainer">
+                        <span class="callToActionButton_arrowDown"></span>
+                        <span class="callToActionButton_text">See latest</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="news">
+            <div class="container px-0">
+               <div class="row gx-xxl-5 gx-xl-5">
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_brawlwc2022.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_booksofclash.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_brawlwc2022.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_booksofclash.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_brawlwc2022.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+                  <article class="article col-12 col-md-6">
+                     <a href=""><img src="./src/assets/images/article_thumb_booksofclash.webp"
+                           alt="The Brawl Stars World Finals Are Over, and We Have a Winner!"
+                           class="article__img" /></a>
+                     <p class="article__desc">news</p>
+                     <a href="">
+                        <p class="article__title">The Brawl Stars World Finals Are Over, and We Have a Winner!</p>
+                     </a>
+                  </article>
+               </div>
+               <div class="more-news">
+                  <a href="" class="btn-more-news btn btn-primary">News Archive</a>
+               </div>
+            </div>
+         </div>
+         <div class="front-page">
+            <!-- Two front page for Nguyen Kien Thuc -->
+            <div class="front-page__character">
+               <div class="banner_hero_img">
+                  <img src="./src/assets/images/bg_wmg_brawlstars.0fd2a716.webp" height="592px" alt="" />
+               </div>
+               <div class="front-page__cotrol">
+                  <div class="front-page_textContainer">
+                     <h3>Games</h3>
+                     <p>
+                        Our dream is to create games that as many people as possible play for years and that are
+                        remembered forever.
+                     </p>
+                     <div>
+                        <a href="#" class="front-page__linkButton">See games</a>
+                     </div>
+                  </div>
+                  <div class="front-page__heroimg">
+                     <img src="./src/assets/images/nita.76e85eac.webp" alt="" />
+                  </div>
+               </div>
+            </div>
+            <div class="front-page__character" style="background-color: #1f7aeb; height: 592px">
+               <div class="front-page__cotrol">
+                  <div class="front-page__heroimg">
+                     <img src="./src/assets/images/miniPekka.de55815b.webp" alt="" />
+                  </div>
+                  <div class="front-page_textContainer">
+                     <h3>Careers</h3>
+                     <p>Join us to create games that excite and help our players around the world make memories.</p>
+                     <div>
+                        <a href="#" class="front-page__linkButton">See Careers</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider">
+            <!-- Button Previous, show when has class 'd-flex', hide when has class 'd-none' -->
+            <button class="slider__action prev align-items-center justify-content-center d-none">
+               <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <!-- Slider Content -->
+
+            <div class="slider-inner px-0 container slider-inner--active">
+               <div class="row gx-5">
+                  <div class="slide__card col-12 col-md-6">
+                     <div class="card-item">
+                        <img src="./src/assets/images/news_mobilegamer.webp" alt="Mobilegamer.biz" class="card__img" />
+                        <div class="card-text">
+                           <h3 class="card__title">
+                              Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
+                              anyway
+                           </h3>
+                           <p class="card__desc">
+                              “We work with a company who did a whole bunch of training to increase awareness of
+                              mental health and also reduce the stigma,” says Mansford. “If people aren’t talking
+                              about it, then that’s a problem in itself.” Staff can ask to be trained like mental
+                              health first aiders under a program called ‘Jedis of the mind’, and in Helsinki there’s
+                              a psychologist on-site twice a week. There are a raft of other training and online
+                              resources for staff who want to learn more in a less public way as well.
+                           </p>
+                           <a href="" class="card__link">READ ARTICLE »</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slide__card col-12 col-md-6">
+                     <div class="card-item">
+                        <img src="./src/assets/images/news_mobilegamer.webp" alt="Mobilegamer.biz" class="card__img" />
+                        <div class="card-text">
+                           <h3 class="card__title">
+                              Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
+                              anyway
+                           </h3>
+                           <p class="card__desc">
+                              "In my experience, whenever you change some design fundamentals, the whole game needs
+                              to be built in a different way. I don’t think many players will notice these
+                              differences, but they can have a big impact on how the game needs to be built.”
+                           </p>
+                           <a href="" class="card__link">READ ARTICLE »</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-inner px-0 container">
+               <div class="row gx-5">
+                  <div class="slide__card col-12 col-md-6">
+                     <div class="card-item">
+                        <img src="./src/assets/images/news_mobilegamer.webp" alt="Mobilegamer.biz" class="card__img" />
+                        <div class="card-text">
+                           <h3 class="card__title">
+                              Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
+                              anyway
+                           </h3>
+                           <p class="card__desc">
+                              “We work with a company who did a whole bunch of training to increase awareness of
+                              mental health and also reduce the stigma,” says Mansford. “If people aren’t talking
+                              about it, then that’s a problem in itself.” Staff can ask to be trained like mental
+                              health first aiders under a program called ‘Jedis of the mind’, and in Helsinki there’s
+                              a psychologist on-site twice a week. There are a raft of other training and online
+                              resources for staff who want to learn more in a less public way as well.
+                           </p>
+                           <a href="" class="card__link">READ ARTICLE »</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slide__card col-12 col-md-6">
+                     <div class="card-item">
+                        <img src="./src/assets/images/news_mobilegamer.webp" alt="Mobilegamer.biz" class="card__img" />
+                        <div class="card-text">
+                           <h3 class="card__title">
+                              Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing
+                              anyway
+                           </h3>
+                           <p class="card__desc">
+                              "In my experience, whenever you change some design fundamentals, the whole game needs
+                              to be built in a different way. I don’t think many players will notice these
+                              differences, but they can have a big impact on how the game needs to be built.”
+                           </p>
+                           <a href="" class="card__link">READ ARTICLE »</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Button Next, show when has class 'd-flex', hide when has class 'd-none' -->
+            <button class="slider__action next align-items-center justify-content-center d-flex">
+               <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <!-- Slider Dots -->
+            <div class="dot-group d-flex align-items-center justify-content-center">
+               <button class="dot dot--active"></button>
+               <button class="dot"></button>
+               <button class="dot"></button>
+               <button class="dot"></button>
+            </div>
+         </div>
+         <footer class="footer">
+            <!-- Footer for Nguyen Kien Thuc -->
+            <div class="Footer_footerContent">
+               <div class="Footer_socialMediaMenu">
+                  <div class="Footer_socialMediaLinks">
+                     <h5>Follow us on</h5>
+                     <div class="Footer_socialMediaList">
+                        <a href="#"><img src="./src/assets/images/some_youtube.6b5d0c55.webp" alt="" /></a>
+                        <a href="#"><img src="./src/assets/images/some_facebook.49531fac.webp" alt="" /></a>
+                        <a href="#"><img src="./src/assets/images/some_instagram.2eaa320b.webp" alt="" /></a>
+                        <a href="#"><img src="./src/assets/images/some_twitter.c380be0d.webp" alt="" /></a>
+                        <a href="#"><img src="./src/assets/images/some_linkedin.974ae044.webp" alt="" /></a>
+                        <a href="#"><img src="./src/assets/images/some_glassdoor.73a81f1e.webp" alt="" /></a>
+                     </div>
+                  </div>
+                  <div class="Footer_storeMenu">
+                     <a href="#"><img src="./src/assets/images/appstore.c44572b2.webp" alt="" /></a>
+                     <a href="#"><img src="./src/assets/images/googleplay.4ced544f.webp" alt="" /></a>
+                  </div>
+               </div>
+               <nav class="Footer_userMenu">
+                  <ul class="Footer_userMenuList">
+                     <li>
+                        <a href="#">Terms of Service</a>
+                     </li>
+                     <li>
+                        <a href="#">Privacy Policy</a>
+                     </li>
+                     <li>
+                        <a href="#">Parent's Guide</a>
+                     </li>
+                     <li>
+                        <a href="#">Safe and Fair Play Policy</a>
+                     </li>
+                     <li>
+                        <a href="#">Other Legal Docs</a>
+                     </li>
+                     <li>
+                        <a href="#">For Media</a>
+                     </li>
+                     <li>
+                        <a href="#">Manage Cookies</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="Footer_end">
+                  <address class="Footer_address">
+                     <span>Supercell Oy</span>
+                     <span>Jätkäsaarenlaituri 1</span>
+                     <span>00180 Helsinki</span>
+                     <span>Finland</span>
+                  </address>
+                  <a href="#" class="Footer_logo">
+                     <img src="./src/assets/images/supercell_logo.png" alt="" />
+                  </a>
+               </div>
+            </div>
+         </footer>
       </div>
-   </body>
+   </div>
+</body>
+
 </html>
