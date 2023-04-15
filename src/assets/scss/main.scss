@@ -13,6 +13,7 @@
    }
 }
 
+// Navigation in header
 .nav {
    color: $nav-text-color;
    display: flex;
@@ -70,6 +71,7 @@
    }
 }
 
+// Menu item in navigation
 .menu__item {
    position: relative;
 }
@@ -90,6 +92,7 @@
    color: $white;
 }
 
+// Search in mobile screen
 .search--mobile {
    display: none;
    margin-top: 4px;
@@ -140,6 +143,7 @@
    height: 100%;
 }
 
+// Btn more in mobile screen
 .btn-more-menu {
    background-color: transparent;
    border: none;
@@ -389,10 +393,12 @@
    }
 }
 
+// Card item in slider
 .card-item {
    box-shadow: 0 2px 16px 4px #ddd;
    height: 705px;
    background-color: $white;
+   overflow: hidden;
 }
 
 .card__img {
@@ -426,6 +432,28 @@
    color: $primary-color;
 }
 
+.card__title {
+   font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+   font-size: 1.8rem;
+   line-height: 1.8;
+   margin-bottom: 18px;
+}
+
+.card__desc {
+   font-size: 1.5rem;
+   margin-bottom: 15px;
+   line-height: 1.5;
+}
+
+.card__link {
+   text-decoration: none;
+   font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   font-size: 1.3rem;
+   color: $primary-color;
+}
+
+// Dot in bottom slider
 .dot-group {
    margin-top: 58px;
 }

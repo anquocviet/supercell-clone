@@ -175,14 +175,18 @@
    .slider-inner {
       width: $max-width;
    }
+
+   .card-item {
+      height: 555px;
+   }
+
+   .card-text {
+      padding: 30px 24px;
+   }
 }
 
 // Apply for screen <= 790px
 @media screen and (max-width: 49.375em) {
-   .container {
-      max-width: 90%;
-   }
-
    .news {
       width: 100%;
    }
@@ -193,6 +197,32 @@
 
    .slider__action {
       display: none !important;
+   }
+}
+
+// Apply for screen <= 47.9375 (bootstrap)
+@media screen and (max-width: 47.9375em) {
+   .container {
+      max-width: 90%;
+   }
+
+   .header {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .card-item {
+      height: auto;
+      padding-bottom: 12px;
+   }
+
+   .card__title {
+      font-size: 1.2em;
+      text-align: center;
+   }
+
+   .card__desc {
+      font-size: 1.6rem;
    }
 }
 
