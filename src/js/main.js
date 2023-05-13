@@ -1,3 +1,4 @@
+import * as bootstrap from 'bootstrap';
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -6,6 +7,9 @@ const menuItems = $$('.menu__item');
 const btnSearch = $('.nav__search');
 const inputSearchDK = $('.input__search--dk');
 const btnMore = $('.btn-more-menu');
+const sliderInner = $$('.slider-inner');
+const btnPrev = $('prev');
+const btnNext = $('next');
 
 btnSearch.onclick = () => {
    inputSearchDK.classList.toggle('searching');

@@ -15,6 +15,7 @@
    font-family: SupercellText-Medium;
    src: url('/src/assets/fonts/sc_text_w_md.woff2');
 }
+@import 'overrideBootstrap';
 @import 'bootstrap/scss/bootstrap';
 @import '@fortawesome/fontawesome-free/css/all.css';
 

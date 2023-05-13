@@ -356,7 +356,7 @@
 }
 
 .slider {
-   padding: 112px 0 48px;
+   padding: 112px 0 138px;
    background-color: #f2f2f2;
    position: relative;
 
@@ -364,33 +364,43 @@
       width: 1200px;
       display: none;
    }
+}
 
-   &-inner--active {
-      display: block;
-   }
+.carousel-indicators {
+   bottom: 0px;
+   top: calc(100% + 58px);
+}
 
-   &__action {
-      width: 66px;
-      height: 74px;
-      background-color: $black;
-      color: $white;
-      font-size: 2.4rem;
-      outline: none;
-      border: none;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-   }
+.carousel-indicators [data-bs-target] {
+   opacity: 1;
+   border-radius: 50%;
+   margin: 8px;
+   border: none;
 
-   &__action:first-of-type {
-      left: 0;
-      border-radius: 0 99px 99px 0;
+   &.active {
+      background-color: $primary-color;
    }
+}
 
-   &__action:last-of-type {
-      right: 0;
-      border-radius: 99px 0 0 99px;
-   }
+.carousel-control-prev,
+.carousel-control-next {
+   top: 50%;
+   width: 66px;
+   height: 74px;
+   opacity: 1;
+   transform: translateY(-50%);
+   transition: opacity 0.15s ease;
+   background-color: $black;
+}
+
+.carousel-control-prev {
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+}
+
+.carousel-control-next {
+   border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%;
 }
 
 // Card item in slider
@@ -432,7 +442,6 @@
    color: $primary-color;
 }
 
-
 .card__title {
    font-family: SupercellText-Medium, Arial, Helvetica, sans-serif;
    font-size: 1.8rem;
@@ -452,24 +461,6 @@
    font-weight: 600;
    font-size: 1.3rem;
    color: $primary-color;
-}
-
-// Dot in bottom slider
-.dot-group {
-   margin-top: 58px;
-}
-
-.dot {
-   width: 14px;
-   height: 14px;
-   border-radius: 99px;
-   background-color: #ccc;
-   margin: 8px;
-   outline: none;
-   border: none;
-   &--active {
-      background-color: $primary-color;
-   }
 }
 
 .footer {
